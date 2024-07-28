@@ -1,0 +1,1 @@
+from .distance_relation_predictor import DistanceBasedRelationPredictor

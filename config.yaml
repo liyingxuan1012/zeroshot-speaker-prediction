@@ -1,0 +1,39 @@
+relation:
+  method: sgg
+  # method: gt
+  # method: distance
+  updating:
+    enable: true
+    scale_increase: 2
+    scale_decrease: 2
+    min: 1
+character_classifier:
+  method:
+    classifier: true
+  clustering:
+    method: kmeans
+    k: 50
+    feature_extractor: manga109
+  classifier:
+    pretrained_model_path: "data/models/data70_resnet_square_model.pt"
+    num_epochs: 5
+    learning_rate: 0.0001
+    batch_size: 8
+    tta: true
+    split: 2
+    n_ensemble: 5
+  data:
+    confidence_threshold: 0.5
+llm_speaker_predictor:
+  model: gpt-4-0314
+  chunk_size: 60
+  use_context: true
+  candidate:
+    n_character: 1
+    confidence_threshold: 0.5
+  prompt:
+    system: speaker_prediction/prompts/speaker_prediction_system.yaml
+    system_candidate: speaker_prediction/prompts/system_with_candidates_printconf.yaml
+  print_confidence: true
+only_character_classification: false
+eval_relationship: false
