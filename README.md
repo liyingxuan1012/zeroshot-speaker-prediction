@@ -1,5 +1,7 @@
-# Code Appendix of "Zero-Shot Character Identification and Speaker Prediction in Comics via Iterative Multimodal Fusion"
-This code appendix includes all codes to reproduce the main experiments of the paper.
+# Zero-Shot Character Identification and Speaker Prediction in Comics via Iterative Multimodal Fusion (ACMMM2024 Oral)
+This repository includes all codes to reproduce the main experiments of our paper: [Zero-Shot Character Identification and Speaker Prediction in Comics via Iterative Multimodal Fusion](https://arxiv.org/abs/2404.13993)
+
+### Overview
 
 This README consists of two parts:
 - Codes: briefly explain each file (e.g., which file corresponds to which module).
