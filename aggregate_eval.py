@@ -51,7 +51,7 @@ def evaluate(exp_name, book_titles, step):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-d", "--manga109_root_dir", type=str, default="data/Manga109_2017_09_28")
+    parser.add_argument("-d", "--manga109_root_dir", type=str, default="data/Manga109_released_2023_12_07")
     parser.add_argument("-e", "--exp_names", type=str, nargs="+", required=True)
     parser.add_argument("-s", "--steps", type=str, nargs="+", default=["0", "1"])
     parser.add_argument("-p", "--plot", action="store_true")

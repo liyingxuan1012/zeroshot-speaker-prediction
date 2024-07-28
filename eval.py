@@ -491,7 +491,7 @@ def predict_one_book(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-d", "--manga109_root_dir", type=str, default="data/Manga109_2017_09_28")
+    parser.add_argument("-d", "--manga109_root_dir", type=str, default="data/Manga109_released_2023_12_07")
     parser.add_argument("-n", "--n_iteration", type=int, default=2)
     parser.add_argument("-e", "--exp_name", type=str, default=None)
     parser.add_argument("-p", "--exp_path", type=str, default=None)
