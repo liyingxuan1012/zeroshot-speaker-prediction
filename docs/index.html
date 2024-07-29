@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Retrieval-Augmented Layout Transformer for Content-Aware Layout Generation">
+  <meta name="keywords" content="RALF, Content-Aware Layout Generation, layout generation, retrieval augmented generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RALF</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Retrieval-Augmented Layout Transformer for Content-Aware Layout Generation</h1>
+          <h2 class="title is-size-3 publication-title">CVPR 2024 (Oral)</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://udonda.github.io/">Daichi Horita</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://naoto0804.github.io/">Naoto Inoue</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://ktrk115.github.io/">Kotaro Kikuchi</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/kyamagu">Kota Yamaguchi</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.hal.t.u-tokyo.ac.jp/~aizawa/">Kiyoharu Aizawa</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Tokyo,</span>
+            <span class="author-block"><sup>2</sup>CyberAgent</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2311.13602.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2311.13602"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/CyberAgentAILab/RALF"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="slide.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Slide</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="poster.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png"/>
+      <h2 class="subtitle has-text-centered">
+        Retrieval-augmented content-aware layout generation. We retrieve nearest neighbor examples based on the input image and use them as a reference to augment the generation process.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Content-aware graphic layout generation aims to automatically arrange visual elements along with a given content, such as an e-commerce product image. In this paper, we argue that the current layout generation approaches suffer from the limited training data for the high-dimensional layout structure. We show that a simple retrieval augmentation can significantly improve the generation quality. Our model, which is named Retrieval-Augmented Layout Transformer (RALF), retrieves nearest neighbor layout examples based on an input image and feeds these results into an autoregressive generator. Our model can apply retrieval augmentation to various controllable generation tasks and yield diverse layouts within a unified architecture. Our extensive experiments show that RALF successfully generates content-aware layouts in both constrained and unconstrained settings and significantly outperforms the baselines.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+        <!-- Framework. -->
+        <h3 class="title is-4">Architecture of Retrieval-Augmented Layout Transformer (RALF)</h3>
+        <div class="content has-text-justified">
+          <p>
+            Overview of Retrieval-Augmented Layout Transformer (RALF). RALF takes a canvas image and a saliency map as input, and then autoregressively generates a layout along with the input image. Our model uses (a) retrieval augmentation that incorporates useful examples to better capture the relationship between the image and the layout, and (b) constraint serialization, an optional module that encodes user-specified requirements, enabling the generation of layouts that adhere to specific requirements for controllable generation.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/method.png"/>
+        </div>
+        <!--/ Framework. -->
+
+
+        <!-- Main result. -->
+        <h3 class="title is-4">Visual Comparison</h3>
+        <div class="content has-text-justified">
+          <p>
+            Visual comparison of the proposed method and the baselines, which are <a href="https://arxiv.org/abs/2205.00303" class="external-link"  target="_blank">CGL-GAN</a>, <a href="https://arxiv.org/abs/2303.15937" class="external-link"  target="_blank">DS-GAN</a>, <a href="https://cyberagentailab.github.io/layout-dm/" class="external-link"  target="_blank">LayoutDM</a>, and our proposed Autoreg Baseline.
+            Since LayoutDM is originally designed for content-agnostic layout generation, we extend the model to accept an input image.
+            Autoreg Baseline is equivalent to our RALF without retrieval augmentation.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/result.png"/>
+        </div>
+        <!--/ Main result. -->
+
+        <h3 class="title is-4">Analysis on Training Dataset Size and Retrieval Size</h3>
+        <div class="content has-text-justified">
+          <p>
+            (Left) We show that retrieval augmentation is effective regardless of the training dataset size. Notably, our RALF trained on just 3,000 samples outperforms the Autoreg Baseline trained on the full 7,734 samples in PKU.<br>
+            (Right) We show that retrieval augmentation is not highly sensitive to the number of retrieved layouts K. Retrieval augmentation significantly enhances the performance even with a single retrieved layout compared to the baseline.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/plot.png"/>
+        </div>
+
+        <h3 class="title is-4">Visual Comparison of Retrieval Size</h3>
+        <div class="content has-text-justified">
+          <p>
+            We examine how different K affects the generated results. The result of K=1 shows that the generated layout is similar to the reference layouts, while the result of K=16 shows that a variety of layouts are generated.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/retrieval_size.png"/>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{horita2024retrievalaugmented,
+        title={{Retrieval-Augmented Layout Transformer for Content-Aware Layout Generation}},
+        author={Daichi Horita and Naoto Inoue and Kotaro Kikuchi and Kota Yamaguchi and Kiyoharu Aizawa},
+        booktitle={CVPR},
+        year={2024}
+      }
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            We thank the authors of <a href="https://github.com/nerfies/nerfies.github.io" class="external-link">Nerfies</a> that kindly open sourced the template of this website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
