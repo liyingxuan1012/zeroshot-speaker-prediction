@@ -139,7 +139,6 @@ Please cite the following paper if you use the Manga109Dialog dataset or our sce
   title={Manga109Dialog: A Large-scale Dialogue Dataset for Comics Speaker Detection},
   author={Li, Yingxuan and Aizawa, Kiyoharu and Matsui, Yusuke},
   booktitle={Proceedings of the IEEE International Conference on Multimedia and Expo},
-  year={2024},
-  organization={IEEE}
+  year={2024}
 }
 ```
