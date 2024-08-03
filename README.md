@@ -129,7 +129,7 @@ If you find this research helpful, please consider citing our paper:
 @inproceedings{li2024zeroshot,
   title={Zero-shot character identification and speaker prediction in comics via iterative multimodal fusion},
   author={Li, Yingxuan and Hinami, Ryota and Aizawa, Kiyoharu and Matsui, Yusuke},
-  booktitle={32nd ACM International Conference on Multimedia},
+  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
   year={2024}
 }
 ```
@@ -138,7 +138,7 @@ Please cite the following paper if you use the Manga109Dialog dataset or our sce
 @inproceedings{li2024manga109dialog,
   title={Manga109Dialog: A Large-scale Dialogue Dataset for Comics Speaker Detection},
   author={Li, Yingxuan and Aizawa, Kiyoharu and Matsui, Yusuke},
-  booktitle={2024 IEEE International Conference on Multimedia and Expo (ICME)},
+  booktitle={Proceedings of the IEEE International Conference on Multimedia and Expo},
   year={2024},
   organization={IEEE}
 }
