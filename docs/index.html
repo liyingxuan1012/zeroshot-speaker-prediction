@@ -116,7 +116,8 @@
     <div class="hero-body">
       <img src="./static/images/teaser.png"/>
       <h2 class="subtitle has-text-centered">
-        Our framework can predict character labels of unseen comics only from images. Courtesy of Kiriga Yuki.
+        Our framework can predict character labels of unseen comics only from images. 
+        Courtesy of Kiriga Yuki.
       </h2>
     </div>
   </div>
@@ -145,27 +146,52 @@
   <div class="container is-max-desktop">
 
         <!-- Framework. -->
-        <h3 class="title is-4">Iterative Multimodal Fusion Method</h3>
+        <h2 class="title is-3">Iterative Multimodal Fusion Method</h2>
         <div class="content has-text-justified">
           <p>
-            Our proposed framework for zero-shot character identification and speaker prediction in comics. Courtesy of Ito Shinpei.
+            We pioneer in revealing the potential of large language models (LLMs) for comics analysis and propose a novel method that integrates text and image modalities. 
+            To address the challenges of integrating LLMs with other modules and enhance the machine's comprehension of comics, we introduce an iterative framework. We merge text-based LLM predictions with image-based classifiers, and alternately refine each module using results from the other. 
           </p>
         </div>
         <div class="content has-text-centered">
           <img src="./static/images/pipeline.png"/>
+          <h3 class="subtitle has-text-centered">
+            Our proposed framework for zero-shot character identification and speaker prediction in comics. Courtesy of Ito Shinpei.
+          </h3>
         </div>
         <!--/ Framework. -->
 
 
         <!-- Main result. -->
-        <h3 class="title is-4">Main results</h3>
+        <h2 class="title is-3">Quantitative results</h2>
         <div class="content has-text-justified">
           <p>
-            Experimental results.
+            In the main evaluation, we omit the steps of object detection, OCR, and character name extraction in data preprocessing. That is, we simplify the tasks of speaker prediction and character identification to classify the character labels for the character and text regions.
+            The experimental results suggest that our iterative process is effective, particularly when the prediction of relationships between text and character regions is accurate.
           </p>
         </div>
         <div class="content has-text-centered">
           <img src="./static/images/result.png"/>
+          <h3 class="subtitle has-text-centered">
+            Speaker prediction and character identification accuracy (%).
+          </h3>
+        </div>
+
+        <h2 class="title is-3">Qualitative results</h2>
+        <div class="content has-text-justified">
+          <p>
+            To validate the effectiveness of our proposed iterative multimodal fusion method, we conducted evaluations in two aspects: <b>Unimodal vs. Multimodal</b> and <b>One-Step vs. Iterative</b>.
+          </p>
+        </div>
+        <h3 class="title is-4">Unimodal vs. Multimodal</h3>
+        <div class="content has-text-centered">
+          <img src="./static/images/case1.png"/>
+          <img src="./static/images/case2.png"/>
+        </div>
+        <h3 class="title is-4">One-Step vs. Iterative</h3>
+        <div class="content has-text-centered">
+          <img src="./static/images/case3_1.png"/>
+          <img src="./static/images/case3_2.png"/>
         </div>
         <!--/ Main result. -->
 
@@ -204,7 +230,3 @@
 
 </body>
 </html>
-
-.container.is-max-desktop {
-  max-width: 100%; /* Adjust this value to increase or decrease width */
-}
