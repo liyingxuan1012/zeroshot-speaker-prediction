@@ -116,7 +116,7 @@
     <div class="hero-body">
       <img src="./static/images/teaser.png"/>
       <h2 class="subtitle has-text-centered">
-        Our framework can predict character labels of unseen comics only from images. 
+        Our framework can predict character labels of unseen comics only from images.<br>
         Courtesy of Kiriga Yuki.
       </h2>
     </div>
@@ -150,14 +150,15 @@
         <div class="content has-text-justified">
           <p>
             We pioneer in revealing the potential of large language models (LLMs) for comics analysis and propose a novel method that integrates text and image modalities. 
-            To address the challenges of integrating LLMs with other modules and enhance the machine's comprehension of comics, we introduce an iterative framework. We merge text-based LLM predictions with image-based classifiers, and alternately refine each module using results from the other. 
+            To address the challenges of integrating LLMs with other modules and enhance the machine's comprehension of comics, we introduce an iterative framework. 
+            We merge text-based LLM predictions with image-based classifiers, and alternately refine each module using results from the other. 
           </p>
         </div>
         <div class="content has-text-centered">
           <img src="./static/images/pipeline.png"/>
-          <h3 class="subtitle has-text-centered">
+          <h2 class="subtitle has-text-centered">
             Our proposed framework for zero-shot character identification and speaker prediction in comics. Courtesy of Ito Shinpei.
-          </h3>
+          </h2>
         </div>
         <!--/ Framework. -->
 
@@ -166,15 +167,15 @@
         <h2 class="title is-3">Quantitative results</h2>
         <div class="content has-text-justified">
           <p>
-            In the main evaluation, we omit the steps of object detection, OCR, and character name extraction in data preprocessing. That is, we simplify the tasks of speaker prediction and character identification to classify the character labels for the character and text regions.
+            In the main evaluation, we omit the steps of object detection, OCR, and character name extraction in data preprocessing. That is, we simplify the tasks of speaker prediction and character identification to classify the character labels for the character and text regions.<br>
             The experimental results suggest that our iterative process is effective, particularly when the prediction of relationships between text and character regions is accurate.
           </p>
         </div>
         <div class="content has-text-centered">
           <img src="./static/images/result.png"/>
-          <h3 class="subtitle has-text-centered">
+          <h2 class="subtitle has-text-centered">
             Speaker prediction and character identification accuracy (%).
-          </h3>
+          </h2>
         </div>
 
         <h2 class="title is-3">Qualitative results</h2>
