@@ -129,7 +129,7 @@ If you find this research helpful, please consider citing our paper:
 @inproceedings{li2024zeroshot,
   title={Zero-shot character identification and speaker prediction in comics via iterative multimodal fusion},
   author={Li, Yingxuan and Hinami, Ryota and Aizawa, Kiyoharu and Matsui, Yusuke},
-  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
+  booktitle={Proceedings of the ACM International Conference on Multimedia},
   year={2024}
 }
 ```
