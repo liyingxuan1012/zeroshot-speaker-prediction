@@ -1,5 +1,5 @@
 # Zero-Shot Character Identification and Speaker Prediction in Comics via Iterative Multimodal Fusion (ACMMM2024 Oral)
-This repository includes all codes to reproduce the main experiments of our paper: [Zero-Shot Character Identification and Speaker Prediction in Comics via Iterative Multimodal Fusion](https://arxiv.org/abs/2404.13993)
+This repository includes all codes to reproduce the main experiments of our paper: **Zero-Shot Character Identification and Speaker Prediction in Comics via Iterative Multimodal Fusion** | [Paper](https://arxiv.org/abs/2404.13993) | [Project page](https://liyingxuan1012.github.io/zeroshot-speaker-prediction)
 
 ![Introduction](figure/introduction.png)
 
